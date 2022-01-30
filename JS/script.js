@@ -9,3 +9,19 @@
     }
 
 }());
+
+// Burger header
+
+(function () {
+    const BurgerItem = document.querySelector('.burger');
+    const menu = document.querySelector('.header_nav');
+    const menuCloseItem = document.querySelector('.header__nav-close');
+    BurgerItem.addEventListener('click', () => {
+        menu.classList.add('header__nav_active');
+    });
+    menuCloseItem.addEventListener('click', () => {
+        menu.classList.remove('header__nav_active');
+    } )
+}()); 
+
+
